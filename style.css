@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    background: linear-gradient(135deg,rgb(210, 226, 249)  0%, rgb(34, 159, 254) 80%);
+    display: grid;
+    grid-template-rows: 1fr 5fr 2fr;
+    border-radius: 20px;
+    height: 33rem;
+    width: 25rem;
+}
+.input{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 5%;
+}
+.input input{
+    border-radius: 30px;
+    width: 60%;
+    height: 100%;
+    outline: none;
+    padding-left: 20px;
+    border: none;
+    font-size: large;
+    color: #212121;
+}
+.input input::placeholder{
+    font-size: 15px;
+    opacity: 70%;
+}
+.Image{
+    width:35px;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#search{
+    background-color: white;
+    border-radius: 50%;
+}
+#search:hover{
+cursor: pointer;
+transform: scale(1.1);
+}
+.tobe{
+    margin: 40px 40px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.type{ 
+    display: flex;
+    justify-content: center;
+}
+.type img{
+width: 30%;
+}
+.tobe .current{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    font-size: 40px;
+    gap: 10px;
+}
+.situation{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+.situation .humidity, .situation .wind{
+    display: flex;
+    align-items: top;
+}
+.situation .humidity .data p, .situation .wind .data p{
+    font-size: 25px;
+}
